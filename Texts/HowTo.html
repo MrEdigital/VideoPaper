@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <!-- desiredWindowSize: (800, 1024) -->
+        <meta name="viewport" content="width=device-width, shrink-to-fit=YES">
+        <style>
+
+            :root {
+              --text-color: black;
+              --border-color: rgba(0,0,0,0.1);
+              --background-color: rgba(0,0,0,0.05);
+            }
+        
+            @media screen and (prefers-color-scheme: dark) {
+              :root {
+                --text-color: white;
+                --border-color: rgba(255,255,255,0.2);
+                --background-color: rgba(255,255,255,0.05);
+              }
+            }
+
+            html {
+                pointer-events: none;
+            }
+
+            body {
+                -webkit-user-select: none;  /* Chrome, Safari, Opera */
+                -moz-user-select: none;     /* Firefox */
+                -ms-user-select: none;      /* Internet Explorer/Edge */
+                user-select: none;          /* Non-prefixed version, currently supported by most modern browsers */
+                background-color: rgba(0,0,0,0);
+                position: relative;
+                color: var(--text-color);
+                font: -apple-system-body;
+                font-size: 10pt;
+                line-height: 18pt;
+                word-spacing: 1pt;
+                margin: 0;
+            }
+
+            h1 {
+                font: -apple-system-headline;
+                font-size: 14pt;
+                line-height: 20pt;
+                padding: 0;
+                margin: 0;
+            }
+
+            section {
+                margin: 20px;
+                padding: 20px;
+                border: 2px var(--border-color) solid;
+            }
+
+            titleBox {
+                font: -apple-system-headline;
+                position: relative;
+                display: block;
+                box-sizing: border-box;
+                font-size: 16pt;
+                margin-top: 20px;
+                margin-bottom: 24px;
+                text-align: center;
+            }
+
+            p {
+                text-indent: 0;
+                padding: 0;
+                margin: 0;
+            }
+
+            box {
+                display: inline-block;
+                position: relative;
+                border: 2px solid var(--border-color);
+                background-color: var(--background-color);
+                padding: 30px;
+                width: calc(100% - 32px * 2);
+                font-size: 18pt;
+                line-height: 28pt;
+            }
+
+        </style>
+    </head>
+    <body>
+        <titleBox>
+            Help & Guidance
+        </titleBox>
+        <section>
+            <p>Welcome to the VideoPaper Help & Guidance section. Here you’ll find answers to common questions and instructions on how to use the app effectively.</p>
+        </section>
+
+        <section>
+            <h1>Where To Find Videos?</h1>
+            <br>
+            <p>VideoPaper isn't a streaming service, or a source of original content.  It's simply a library manager, a player, and a configuration set, for videos you already own or have local access to.  So if you're looking to find videos for use in this way, I can't guarantee any one particular source, but here are a few tips that may help guide you on your way:</p>
+            <ol>
+                <li>
+                    <p><strong>In Your Library:</strong><br>
+                               The app supports any local (as in, on your machine) mpeg video, including the file formats `mov`, `mp4`, and `m4v`. If you already have videos of these types that may make for good wallpapers, then simply point the app to them (see: "Import Videos") and assign them to a display (see: "Assign Videos") to give them a try.</p>
+                    <br>
+                </li>
+                <li>
+                    <p><strong>On The Web:</strong><br>
+                               There are many sources of videos on the internet which can make for great video wallpapers. Search around and try to find one that works best for you, and provides videos of a sort that you think look best. When doing this, I suggest looking for videos that are at the resolution of your display, or higher, if possible. Generally speaking, you're likely to want to look for 4K video with as little compression as possible, where most will typically be 1080p with noticeable compression.  Once you've downloaded these to your computer, simply add them to the app (see: "Import Videos") and assign them to a display (see: "Assign Videos") to try them out.</p>
+                    <br>
+                </li>
+                <li>
+                    <p><strong>MacOS Screensavers:</strong><br>
+                               If you already make use of Screensavers in macOS, you will likely have immediate access to a variety of high quality 4K videos already on your machine which, as a user, you can locate and play in any video player at any time. You can also download more through the Screensavers section of System Settings, by selecting Screensavers you haven't already downloaded. As of the time I'm writing this, you can find these video files located in the following directory:
+                                <br><br>
+                                <code>/Library/Application Support/com.apple.idleassetsd/Customer/4KSDR240FPS/</code>
+                                <br><br>
+                                Simply add the directory as a Video Folder to the app (see: "Import Videos"), and refresh it any time a new one is downloaded.  Enjoy!</p>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h1>How To...</h1>
+            <ul>
+                <li>
+                    <p><strong>Import Videos:</strong><br>
+                               To add register videos within this app for assignment to a Desktop, simply click “Import Videos” and select one or more individual video files, and they should immediately populate the UI. Alternatively, you can select an entire folder using “Import Video Folder”, and its contents will be reflected in a dedicated section. Videos added from a folder are managed automatically, and their contents can be refreshed at any time.</p>
+                    <br>
+                </li>
+                <li>
+                    <p><strong>Remove Videos:</strong><br>
+                               To remove a single video, hover its thumbnail and click the remove button. To remove videos from folders, you instead remove the video from that folder in the Finder, and then refresh that folder in-app.</p>
+                    <br>
+                </li>
+                <li>
+                    <p><strong>Assign Videos:</strong><br>
+                               To assign a video to a desktop, you simply select the display containing the desktop you would like change from the dropdown menu at the top, and then click an imported video thumbnail to assign it.</p>
+                    <br>
+                </li>
+                <li>
+                    <p><strong>Locate Videos:</strong><br>
+                               You can right-click on any video thumbnail to view it in Finder. You can also do the same for Video Folders by clicking the button beside its name.</p>
+                    <br>
+                </li>
+                <li>
+                    <p><strong>Adjust Settings:</strong><br>
+                               Use the sliders to adjust the scale, alignment, and playback speed of your video wallpapers. Changes are applied in real-time, and can be used to align videos between displays, and to adjust timing of videos that may be too fast or too slow for desktop viewing enjoyment.</p>
+                    <br>
+                </li>
+                <li>
+                    <p><strong>Control Videos:</strong><br>
+                               There are buttons provided that control the playback of all videos currently assigned to your desktops. These can be used to temporarily limit distractions, save on energy usage, or synchronize video playbacks between all displays.</p>
+                    <ul>
+                        <li><strong>Restart All:</strong><br>
+                                    Restarts the videos on all displays.</li>
+                        <li><strong>Pause All:</strong><br>
+                                    Pauses the videos on all displays.</li>
+                        <li><strong>Play All:</strong><br>
+                                    Plays the videos on all displays if paused.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Settings</h1>
+            <ul>
+                <li><p><strong>Launch at Startup:</strong><br>
+                               Enable this to start VideoPaper automatically when you log in.</p></li>
+                <br>
+                <li><p><strong>Auto Pause on Battery:</strong><br>
+                               Enable this to pause videos to save battery life when not plugged in, when running the app on a laptop device.</p></li>
+                <br>
+                <li><p><strong>Hide Desktop:</strong><br>
+                               Enable this to hide desktop icons while VideoPaper is running. Note that the desktop still remains, and can even be messed with inadvertently if clicking around, and is simply obscured by the playing video.</p></li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Usage Considerations</h1>
+            <br>
+            <p>There are two aspects to running an app like this that there's really no getting around, and are ultimately what you should consider when deciding whether this is app you can run all the time, run while plugged in, or run sparingly, at best.  Read below to help best inform these decisions:</p>
+            <ul>
+                <li><strong>Battery Life:</strong><br>
+                            Depending on the device this app is running on, you are likely to expereince a differing level of battery life impact.  Some newer devices are astoundingly efficient, and in my testing, seem to do quite well even with this running all the time.  However, every device is different, and evey workload is different, so please keep an eye on your battery depletion rates, and if you feel it dropping two quickly, consider making use of the "Auto Pause on Battery" setting mentioned above.</li>
+                <br>
+                <li><strong>CPU / GPU / Memory Impact:</strong><br>
+                            This is an important one.  Running a high res video, especially on multiple displays, is going to have some impact on your hardware.  Like with battery life, the impact is going to differ from one device to another, based on configuration, but also due to the way you use your computer.<br>
+                            <br>
+                            If you find yourself resource-constrained and exepriencing slowdowns while running this app, I suggest pausing the videos until your workload lightens back up.  Simply pausing the videos should be sufficient, but in some cases, you may wish to quit the app entirely.  In especially demanding environments, sad to say, but you may want to reconsider running such an app at all.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Additional Information</h1>
+            <br>
+            <p>For more information about the app, please see the following sections which can be found in the main menu:</p>
+            <ul>
+                <li><strong>About VideoPaper:</strong><br>
+                            Access this to learn more about the app.</li>
+                <br>
+                <li><strong>End User License Agreement:</strong><br>
+                            Access this to review the associated agreement.</li>
+                <br>
+                <li><strong>Privacy Policy:</strong><br>
+                            Access this to understand how your data is handled.</li>
+            </ul>
+        </section>
+
+    </body>
+</html>
+

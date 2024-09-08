@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <!-- desiredWindowSize: (640, 798) -->
+        <meta name="viewport" content="width=device-width, shrink-to-fit=YES">
+        <style>
+
+            :root {
+              --text-color: black;
+              --image-filter: none;
+              --border-color: rgba(0,0,0,0.1);
+              --background-color: rgba(0,0,0,0.05);
+            }
+        
+            @media screen and (prefers-color-scheme: dark) {
+              :root {
+                --text-color: white;
+                --image-filter: invert();
+                --border-color: rgba(255,255,255,0.2);
+                --background-color: rgba(255,255,255,0.05);
+              }
+            }
+
+            html {
+                pointer-events: none;
+            }
+
+            body {
+                -webkit-user-select: none;  /* Chrome, Safari, Opera */
+                -moz-user-select: none;     /* Firefox */
+                -ms-user-select: none;      /* Internet Explorer/Edge */
+                user-select: none;          /* Non-prefixed version, currently supported by most modern browsers */
+                background-color: rgba(0,0,0,0);
+                position: relative;
+                color: var(--text-color);
+                font: -apple-system-body;
+                font-size: 10pt;
+                line-height: 18pt;
+                word-spacing: 1pt;
+                margin: 0;
+            }
+
+            h1 {
+                font: -apple-system-headline;
+                font-size: 14pt;
+                line-height: 20pt;
+                padding: 0;
+                margin: 0;
+            }
+        
+            section {
+                margin: 20px;
+                padding: 20px;
+                border: 2px var(--border-color) solid;
+            }
+
+            titleBox {
+                font: -apple-system-headline;
+                position: relative;
+                display: block;
+                box-sizing: border-box;
+                font-size: 16pt;
+                margin-top: 20px;
+                margin-bottom: 24px;
+                text-align: center;
+            }
+
+            p {
+                text-indent: 0px;
+                padding: 0;
+                margin: 0;
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .logo {
+                width: 200px;
+                height: 200px;
+                margin-top: 32px;
+                filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="icon-256.png" class="logo"></img>
+        <titleBox>
+            VideoPaper v{App_Version}
+        </titleBox>
+        <section>
+            <h1>About:</h1>
+            <br>
+            <p>
+            VideoPaper is a macOS application designed to enhance your computing experience by providing the ability to set and configure dynamic video wallpapers, transforming your static backgrounds into vibrant, dramatic environments, that bring your desktop to life.
+            </p>
+            <br>
+            <h1>Features:</h1>
+            <ul>
+                <li>Import local videos individually or by folder reference.</li>
+                <li>Assign video wallpapers to one or more connected displays.</li>
+                <li>Adjust wallpaper scale, alignment, and playback speed independently, and dynamically.</li>
+                <li>Benefit from automatic cross-fades and seamless looping that prevent jarring transitions as videos reach their end.</li>
+            </ul>
+        </section>
+        <section>
+            <p style="text-align: center;">
+            Developed by {Attribution_Name}.  Copyright {Current_Year}.  All rights reserved.
+            </p>
+        </section>
+    </body>
+</html>
